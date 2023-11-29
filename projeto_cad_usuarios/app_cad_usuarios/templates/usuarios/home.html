@@ -17,11 +17,18 @@
     <!-- As a link -->
     <nav style="background-color: aquamarine !important;" class="navbar navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">Cadastre-me</a>
         </div>
     </nav>
+    <form action="{% url 'listagem_usuarios' %}" method="post">
+        <div style="text-align: center;" class="conteiner">
+            <h1>Cadastro de Usuários</h1>
+            Nome <input nome="nome" class="form-control-sm" type="text">
+            Idade <input nome="idade" class="form-control-sm" type="text">
+            <button class="form-control-sm">Enviar</button>
+        </div>
+    </form>
 
-    <h1>Cadastre-me!</h1>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
